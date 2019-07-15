@@ -23,8 +23,9 @@
 </head>
 
 <body>
+    {{!-- left hand stuff/ LINKS--}}
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#">Salutaris |</a>
+        <a class="navbar-brand" href="/">Salutaris |</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -33,17 +34,17 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item active">
-                    <h2><a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a></h2>
+                    <h2><a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a></h2>
                 </li>
                 <li class="nav-item active">
-                    <h2><a class="nav-link" href="#">About Us<span class="sr-only">(current)</span></a></h2>
+                    <h2><a class="nav-link" href="/about">About Us<span class="sr-only">(current)</span></a></h2>
                 </li>
             </ul>
         </div>
-
+        {{!-- right hand side stuff/ LOGIN --}}
         <form class="form-inline my-2 my-lg-0">
             <label for="userName" class="mr-sm-2">User name: </label>
-            <input class="form-control mr-sm-2" type="search" placeholder="User Name" aria-label="Search">
+            <input class="form-control mr-sm-2" type="search" placeholder="User name" aria-label="Search">
             <label for="password" class="mr-sm-2">Password:</label>
             <input class="form-control mr-sm-2" type="search" placeholder="Password" aria-label="Search">
             <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Login</button>
@@ -52,7 +53,8 @@
 
     {{{body}}}
 
-    <div class="fixed-bottom text-center">
+    {{!-- footer --}}
+    <div class="fixed-bottom">
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item active">
