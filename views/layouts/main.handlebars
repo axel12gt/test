@@ -23,53 +23,58 @@
 </head>
 
 <body>
-    {{!-- left hand stuff/ LINKS--}}
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="/">Salutaris |</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
 
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
-                    <h2><a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a></h2>
-                </li>
-                <li class="nav-item active">
-                    <h2><a class="nav-link" href="/about">About Us<span class="sr-only">(current)</span></a></h2>
-                </li>
-            </ul>
-        </div>
-        {{!-- right hand side stuff/ LOGIN --}}
-        <div class="my-2 my-lg-0">
-            <ul class="navbar-nav mr-auto">
-                <li class="navbar-brand">
-                    <h4><a href="#" class="nav-link">Login</a></h4>
-                </li>
-                <li class="navbar-brand">
-                    <h4 class="mt-2">|</h4>
-                </li>
-                <li class="navbar-brand">
-                    <h4><a href="#" class="nav-link">Sign Up</a></h4>
-                </li>
-            </ul>
-        </div>
-
-    </nav>
-
-    {{{body}}}
-
-    {{!-- footer --}}
-    <div class="footer" style="position: absolute; bottom: 0; width: 100%; ">
+    <div id="page_container">
+        {{!-- left hand stuff/ LINKS--}}
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
-                    <h4><a class="nav-link" href="#">Contact us <span class="sr-only">(current)</span></a></h4>
-                </li>
-            </ul>
+            <a class="navbar-brand" href="/">Salutaris |</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <h2><a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a></h2>
+                    </li>
+                    <li class="nav-item active">
+                        <h2><a class="nav-link" href="/about">About Us<span class="sr-only">(current)</span></a></h2>
+                    </li>
+                </ul>
+            </div>
+            {{!-- right hand side stuff/ LOGIN --}}
+            <div class="my-2 my-lg-0">
+                <ul class="navbar-nav mr-auto">
+                    <li class="navbar-brand">
+                        <h4><a href="#" class="nav-link">Login</a></h4>
+                    </li>
+                    <li class="navbar-brand">
+                        <h4 class="mt-2">|</h4>
+                    </li>
+                    <li class="navbar-brand">
+                        <h4><a href="#" class="nav-link">Sign Up</a></h4>
+                    </li>
+                </ul>
+            </div>
+
         </nav>
-    </div>
+
+        {{{body}}}
+
+        </div>
+
+        {{!-- footer --}}
+        <div class="footer" style="bottom: 0; width: 100%; ">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <h4><a class="nav-link" href="#">Contact us <span class="sr-only">(current)</span></a></h4>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    
 
 </body>
 
