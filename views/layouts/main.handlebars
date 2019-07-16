@@ -42,19 +42,26 @@
             </ul>
         </div>
         {{!-- right hand side stuff/ LOGIN --}}
-        <form class="form-inline my-2 my-lg-0">
-            <label for="userName" class="mr-sm-2">User name: </label>
-            <input class="form-control mr-sm-2" type="search" placeholder="User name" aria-label="Search">
-            <label for="password" class="mr-sm-2">Password:</label>
-            <input class="form-control mr-sm-2" type="search" placeholder="Password" aria-label="Search">
-            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Login</button>
-        </form>
+        <div class="my-2 my-lg-0">
+            <ul class="navbar-nav mr-auto">
+                <li class="navbar-brand">
+                    <h4><a href="#" class="nav-link">Login</a></h4>
+                </li>
+                <li class="navbar-brand">
+                    <h4 class="mt-2">|</h4>
+                </li>
+                <li class="navbar-brand">
+                    <h4><a href="#" class="nav-link">Sign Up</a></h4>
+                </li>
+            </ul>
+        </div>
+
     </nav>
 
     {{{body}}}
 
     {{!-- footer --}}
-    <div class="fixed-bottom">
+    <div class="footer" style="position: absolute; bottom: 0; width: 100%; ">
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item active">
