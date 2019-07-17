@@ -15,4 +15,8 @@ module.exports = function(app){
     app.get("/survey", function(req,res){
         res.render("survey")
     })
+
+    app.get("/signup", function(req,res){
+        res.render("signup")
+    })
 }
