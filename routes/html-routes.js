@@ -19,4 +19,8 @@ module.exports = function(app){
     app.get("/signup", function(req,res){
         res.render("signup")
     })
+
+    app.get("/userlanding", function(req,res){
+        res.render("userlanding")
+    })
 }
