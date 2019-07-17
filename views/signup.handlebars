@@ -3,10 +3,6 @@
         <div class="container">
             <div id="container" style="width:30%" class="center">
                 <div class="form-group">
-                    <label for="userId">User ID: </label>
-                    <input type="text" class="form-control" id="userId" placeholder="Enter User Id">
-                </div>
-                <div class="form-group">
                     <label for="lastName">Last Name: </label>
                     <input type="text" class="form-control" id="lastName" placeholder="Last Name">
                 </div>
@@ -19,8 +15,20 @@
                     <input type="text" class="form-control" id="zipCode" placeholder="Zip code" title="Zip code"
                         pattern=".{5,5}">
                 </div>
-                <button type="submit" class="btn btn-primary" onclick="window.location.href='/survey'" id="submitUser">Submit</button>
+                <label for="exampleInputEmail1">Email address</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                    placeholder="Enter email">
+                <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone
+                    else.</small>
+                <div class="form-group">
+                    <label for="exampleInputPassword1">Password</label>
+                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                </div>
             </div>
+
+            <button type="submit" class="btn btn-primary" onclick="window.location.href='/survey'"
+                id="submitUser">Submit</button>
         </div>
     </div>
+</div>
 </div>
