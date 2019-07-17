@@ -23,4 +23,8 @@ module.exports = function(app){
     app.get("/userlanding", function(req,res){
         res.render("userlanding")
     })
+
+    app.get("/contactus", function(req,res){
+        res.render("contactus")
+    })
 }
