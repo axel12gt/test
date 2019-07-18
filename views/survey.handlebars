@@ -7,38 +7,38 @@
 <div class="container mt-5">
     <div class="jumbotron jumbotron-fluid">
         <div class="container">
-            <div class="form-group">
+            {{!-- form-group --}}
+            <form class="form-group" id="survey">
+                {{!-- smoke --}}
                 <label for="smoke">Do you smoke?</label>
                 <select name="smoke" class="form-control" id="smoke" style="max-width: 20%">
-                    <option>No</option>
-                    <option>Yes</option>
+                    <option value="0">No</option>
+                    <option value="1">Yes</option>
                 </select>
-            </div>
-            <div class="form-group">
+                {{!-- drinks --}}
                 <label for="drinks">How many times do you drink?(Per week)</label>
                 <input class="form-control" id="drinks" type="number" style="max-width: 20%" min="1"
                     oninput="validity.valid||(value='')" title="numbers only">
-            </div>
-            <div class="form-group">
+                {{!-- weight --}}
                 <label for="weight">How much do you weigh?</label>
                 <input class="form-control" id="weight" type="number" style="max-width: 20%" min="0"
                     oninput="validity.valid||(value='')" title="numbers only">
-            </div>
-            <div class="form-group">
+                {{!-- calories --}}
                 <label for="calories">How many calories do you ingest?(Daily)</label>
                 <input class="form-control" id="calories" type="number" style="max-width: 20%" min="0"
                     oninput="validity.valid||(value='')">
-            </div>
-            <div class="form-group">
+                {{!-- exercise --}}
                 <label for="exercise">How much excercise do you do per week?(Minutes)</label>
                 <input class="form-control" id="exercise" type="number" style="max-width: 20%" min="0"
                     oninput="validity.valid||(value='')">
+                {{!-- mood --}}
                 <label for="mood">What's your mood?</label>
                 <select class="form-control" id="mood" rows="1" style="max-width: 20%">
                     <option value="0">happy</option>
                     <option value="1">content</option>
                     <option value="2">sad</option>
                 </select>
+                {{!-- race --}}
                 <label for="race">What is your race?</label>
                 <select class="form-control" id="race" id="race" rows="1" style="max-width: 20%">
                     <option value="05">Not releaseable</option>
@@ -49,18 +49,21 @@
                     <option value="09">Hispanic</option>
                     <option value="01">White</option>
                 </select>
+                {{!-- gender --}}
                 <label for="gender">What is your gender?</label>
                 <select class="form-control" id="gender" style="max-width: 20%">
                     <option value="male">Male</option>
                     <option value="female">Female</option>
                     <option value="apache helicopter">Apache Helicopter</option>
                 </select>
+                {{!-- height --}}
                 <label for="height">How tall are you?(inches)</label>
                 <input class="form-control" id="height" type="number" style="max-width: 20%" min="1"
                     oninput="validity.valid||(value='')" title="numbers only">
-            </div>
-            <button type="submit" class="btn btn-primary" onclick="window.location.href='#'"
-                id="submitUser">Submit</button>
+                <br>
+                {{!-- onclick="window.location.href='#'" --}}
+                <button type="submit" class="btn btn-primary" id="submitUser">Submit</button>
+            </form>
         </div>
     </div>
 </div>
