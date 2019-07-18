@@ -34,7 +34,7 @@ $(function(){
             password: $("#password").val().trim(),
         }
         console.log(signup);
-        $post("/api/signup", signup)
+        $.post("/api/signup", signup)
     }
 
     function contactUs(event){
@@ -47,7 +47,7 @@ $(function(){
             message: $("#message").val().trim()
         }
         console.log(contactus)
-        $post("/api/contactus", contactus)
+        $.post("/api/contactus", contactus)
     }
 
     function login(event){
@@ -58,7 +58,7 @@ $(function(){
             password: $("#passworD").val().trim()
         }
         console.log(logan)
-        $post("/api/login", logan)
+        $.post("/api/login", logan)
     }
 
 
