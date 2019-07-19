@@ -30,8 +30,8 @@ $(function(){
             lastname: $("#lastName").val().trim(),
             firstname: $("#firstName").val().trim(),
             zipcode: $("#zipcode").val().trim(),
-            email: $("#email").val().trim(),
-            password: $("#password").val().trim(),
+            email:"miguel@email.com" /** $("#email").val().trim()*/,
+            password:"password" /**$("#password").val().trim()*/,
         }
         console.log(signup);
         $.post("/api/signup", signup)
